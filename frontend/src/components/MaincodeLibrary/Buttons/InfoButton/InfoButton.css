@@ -1,0 +1,38 @@
+/** INFO BUTTON STYLE */
+.maincode-info-button-wrapper{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    vertical-align: bottom;
+    margin: 0 0 2px 3px;
+}
+.maincode-button.info-button {
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    float: right;
+    padding: 2px;
+    margin: 2px;
+
+    background-color: var(--color-simple-blue);
+    color: #fff;
+    font-size: 11px;
+    font-family: var(--menu-font);
+    -webkit-font-smoothing: antialiased;
+
+    outline: none;
+    border-radius: 100%;
+
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+.maincode-button.info-button span{
+    width: 100%;
+    text-align: center;
+}
+.info-button-overlay .ant-popover-inner-content{
+    max-width: 350px;
+}

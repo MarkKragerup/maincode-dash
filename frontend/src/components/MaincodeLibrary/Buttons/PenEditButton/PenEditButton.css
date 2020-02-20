@@ -1,0 +1,9 @@
+.maincode-button.pen-edit-button{
+    display: inline-block;
+    margin: 0;
+    float: right;
+    box-sizing: border-box;
+    height: 25px;
+    font-size: 13px;
+    padding: 0;
+}

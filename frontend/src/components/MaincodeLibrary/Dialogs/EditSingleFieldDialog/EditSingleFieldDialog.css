@@ -1,0 +1,36 @@
+.customdialogedit-container {
+}
+.customdialogedit-inputs-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px!important;
+}
+.customdialogedit-title h2{
+    font-size: 25px!important;
+}
+.custom-dialog-edit-button-container{
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.customdialogedit-textfield-section{
+    margin-right: 15px;
+}
+.customdialogedit-button span{
+    font-size: 15px;
+}
+.customdialogedit-button.save{
+    background-color: #5cb85c!important;
+}
+.customdialogedit-button.cancel{
+    background-color: #d6ae2f !important;
+}
+.customdialogedit-button.delete{
+    background-color: #d65d5d !important;
+}
+.edit-single-field-dialog-textfield{
+    padding: 25px!important;
+}

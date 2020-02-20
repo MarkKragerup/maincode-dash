@@ -1,0 +1,30 @@
+.snackbar-style{
+    top: 50px!important;
+    height: 50px;
+}
+.snackbar-style div{
+    font-size: 20px;
+}
+.snackbar-style div div{
+    color: white;
+}
+.snackbar-style.error div{
+    background-color: var(--color-simple-red) !important;
+}
+.snackbar-style.success div{
+    background-color: var(--color-simple-green) !important;
+}
+.snackbar-style.info div{
+    background-color: var(--color-simple-blue) !important;
+}
+.snackbar-style.warning div{
+    background-color: var(--color-simple-yellow) !important;
+}
+.snackbar-icon-style{
+    position: absolute!important;
+    height: 30px!important;
+    font-size: 30px!important;
+}
+.snackbar-text{
+    margin-left: 40px;
+}

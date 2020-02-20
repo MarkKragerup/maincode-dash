@@ -1,0 +1,7 @@
+# DEPENDENCIES:
+
+### Animate.css
+> npm install animate.css --save
+
+### Ant-Design
+> npm i ant-d (i think).

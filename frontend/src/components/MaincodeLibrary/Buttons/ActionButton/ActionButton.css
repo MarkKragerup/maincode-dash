@@ -1,0 +1,67 @@
+/** GENERAL MAINCODE-BUTTON STYLING */
+.maincode-button {
+    height: 40px;
+    box-sizing: border-box;
+    margin: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--menu-font);
+    -webkit-font-smoothing: antialiased;
+
+    outline: none;
+    border: 1px solid hsla(0,0%,43.1%,.1);
+    border-radius: 2px;
+
+
+    cursor: pointer;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+/* STYLING FOR NON-SQUARE BUTTON CONTENT ALIGNMENTS */
+.maincode-button:not(.square){
+    box-sizing: border-box;
+    padding: 0 5px 0 0;
+    display: flex;
+    align-items: stretch;
+}
+.maincode-button:not(.square) .icon-span{
+    flex-basis: 30px;
+    flex-shrink: 0;
+    margin: auto;
+    text-align: center;
+}
+.maincode-button:not(.square) .children-span{
+    text-align: center;
+    flex-grow: 1;
+    border-left: 1px solid white;
+}
+/* COLOR OPTIONS */
+.maincode-button.transparent {
+    background-color: transparent;
+    color: var(--color-toned-black);
+}
+.maincode-button.white {
+    background-color: white;
+    color: var(--color-toned-black);
+}
+.maincode-button.grey {
+    background-color: var(--color-toned-white);
+    color: var(--color-toned-black);
+}
+.maincode-button.green { background-color: var(--color-simple-green) }
+.maincode-button.red { background-color: lightcoral }
+.maincode-button.blue { background-color: var(--color-simple-blue) }
+.maincode-button.dark { background-color: var(--color-simple-dark) }
+
+/* INTERACTION EFFECTS*/
+.maincode-button:hover { opacity: 0.6 }
+.maincode-button.white:hover, .maincode-button.grey:hover, .maincode-button.transparent:hover{
+    background-color: rgba(50, 50, 50, 0.2);
+}
+.maincode-button:active {
+    -webkit-transition: all .25s ease-in-out, background-color 0.1s;
+    transition: all .25s ease-in-out, background-color 0.1s;
+    background-color: rgba(50, 50, 50, 0.8)
+}
+
+/** GENERAL MAINCODE BUTTON STYLING END */
