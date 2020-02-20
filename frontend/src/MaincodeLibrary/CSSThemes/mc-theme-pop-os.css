@@ -33,7 +33,7 @@
     --pop-color-15: #34E2E2;
     --pop-color-16: #EEEEEC;
 
-    --pop-window-title-font: semi-bold, 'Fira Sans', sans-serif;
+    --pop-window-title-font: 'Fira Sans', sans-serif;
     --pop-interface-font: 'Fira Sans', sans-serif;
     --pop-document-font: 'Roboto Slab', serif;
     --pop-monospace-font: 'Fira Mono', monospace;
@@ -63,41 +63,55 @@
     /** OTHER THEME VARIABLES */
     --theme-background: #FCEEB5;
     --theme-border-highlight: 1px solid #a19893;;
-
-    --theme-content-card-background..border...header?
 }
 
 /** Initial global application of the theme variables */
 html, body{
     background-color: var(--theme-background);
-    font: var(--regular-font);
+    font-family: var(--regular-font);
     color: var(--secondary-color-1);
 }
 h1, h2, h3, h4, h5, h6{
-    font: var(--header-font);
+    font-family: var(--header-font);
     color: var(--secondary-color-1);
+    font-weight: 600;
 }
 p{
-    font: var(--regular-font);
+    font-family: var(--regular-font);
     color: var(--secondary-color-1);
 }
 span{
-    font: var(--regular-font);
+    font-family: var(--regular-font);
     color: var(--secondary-color-1);
 }
 label{
-    font: var(--regular-font);
+    font-family: var(--regular-font);
     color: var(--secondary-color-1);
 }
 input {
-    font: var(--regular-font);
+    font-family: var(--regular-font);
     color: var(--secondary-color-1);
 }
 button, button span{
-    font: var(--menu-font);
+    font-family: var(--menu-font);
     color: var(--secondary-color-1);
 }
 a{
-    font: var(--menu-font);
+    font-family: var(--menu-font);
     color: var(--secondary-color-1);
+}
+
+/** Styling cards for the theme */
+.theme-card {
+    background-color: var(--primary-color-1);
+    box-shadow: var(--card-box-shadow);
+
+    border-radius: 3px;
+    width: 450px;
+}
+.theme-card h1, .theme-card h2{
+    margin: 0;
+}
+.theme-card p{
+    margin: 0;
 }

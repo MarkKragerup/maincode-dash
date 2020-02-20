@@ -3,7 +3,6 @@ import Frontpage from './pages/Frontpage/Frontpage';
 import './MaincodeLibrary/Maincode-Styles.css';
 import './MaincodeLibrary/CSSThemes/mc-theme-pop-os.css'
 
-import './App.css';
 
 function App() {
   return (
