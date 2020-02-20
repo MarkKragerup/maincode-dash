@@ -18,5 +18,5 @@ else
 
     # Build and run new instance
     docker build -t dash-frontend-dev -f Dockerfile.dev .
-    docker run -d --name dash-frontend-dev-01 -v $(pwd):/frontend -p 3000:3000 -p 35729:35729 -it --rm dash-frontend-dev
+    docker run --name dash-frontend-dev-01 -v $(pwd):/app -p 3000:3000 -it --rm dash-frontend-dev
 fi
