@@ -1,0 +1,103 @@
+/**
+ * Maincode THEME css: based on Pop!_OS
+ */
+/** FONT IMPORTS **/
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans:400,600|Roboto+Slab:400,600&display=swap');
+
+/** Global variables for the Pop!_OS THEME! **/
+:root {
+
+    /**** Original Pop_OS Colors + fonts ****/
+
+    --pop-sand-color: #FCEEB5;
+    --pop-term-text-color: #F2F2F2;
+    --pop-term-green-text-color: #73C48F;
+    --pop-cursor-color: #49B9C7;
+    --pop-cursor-background: #F6F6F6;
+    --pop-highlight-blue: #48B9C7;
+
+    --pop-color-1: #333333;
+    --pop-color-2: #CC0000;
+    --pop-color-3: #4E9A06;
+    --pop-color-4: #C4A000;
+    --pop-color-5: #3465A4;
+    --pop-color-6: #75507B;
+    --pop-color-7: #06989A;
+    --pop-color-8: #D3D7CF;
+    --pop-color-9: #88807C;
+    --pop-color-10: #F15D22;
+    --pop-color-11: #73C48F;
+    --pop-color-12: #FFCE51;
+    --pop-color-13: #48B9C7;
+    --pop-color-14: #AD7FA8;
+    --pop-color-15: #34E2E2;
+    --pop-color-16: #EEEEEC;
+
+    --pop-window-title-font: semi-bold, 'Fira Sans', sans-serif;
+    --pop-interface-font: 'Fira Sans', sans-serif;
+    --pop-document-font: 'Roboto Slab', serif;
+    --pop-monospace-font: 'Fira Mono', monospace;
+
+
+    /**** END ORIGINAL COLORS + FONTS ****/
+
+    /* THEME FONTS */
+    --header-font: var(--pop-window-title-font);
+    --regular-font: var(--pop-document-font);
+    --menu-font: var(--pop-interface-font);
+    --monospace-font: var(--pop-monospace-font);
+
+    /** THEME COLORS */
+    --primary-color-1: var(--pop-term-text-color);
+    --primary-color-2: var(--pop-cursor-color);
+    --primary-color-3: var(--pop-term-green-text-color);
+
+    --secondary-color-1: var(--pop-color-1);
+    --secondary-color-2: var(--pop-color-4);
+    --secondary-color-3: var(--pop-color-9);
+
+    --alternative-color-1: var(--pop-color-3);
+    --alternative-color-2: var(--pop-color-14);
+    --alternative-color-3: var(--pop-color-6);
+
+    /** OTHER THEME VARIABLES */
+    --theme-background: #FCEEB5;
+    --theme-border-highlight: 1px solid #a19893;;
+
+    --theme-content-card-background..border...header?
+}
+
+/** Initial global application of the theme variables */
+html, body{
+    background-color: var(--theme-background);
+    font: var(--regular-font);
+    color: var(--secondary-color-1);
+}
+h1, h2, h3, h4, h5, h6{
+    font: var(--header-font);
+    color: var(--secondary-color-1);
+}
+p{
+    font: var(--regular-font);
+    color: var(--secondary-color-1);
+}
+span{
+    font: var(--regular-font);
+    color: var(--secondary-color-1);
+}
+label{
+    font: var(--regular-font);
+    color: var(--secondary-color-1);
+}
+input {
+    font: var(--regular-font);
+    color: var(--secondary-color-1);
+}
+button, button span{
+    font: var(--menu-font);
+    color: var(--secondary-color-1);
+}
+a{
+    font: var(--menu-font);
+    color: var(--secondary-color-1);
+}
