@@ -2,6 +2,8 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');                             /* For icons */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');                             /* For icons */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');  /* For icons */
+
+@import '~antd/dist/antd.css';
 @import 'normalize.css';
 
 :root {

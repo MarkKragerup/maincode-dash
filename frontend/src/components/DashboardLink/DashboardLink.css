@@ -1,0 +1,65 @@
+.link-card {
+    box-sizing: border-box;
+    margin: 10px;
+    min-height: 50px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 0.2s all ease;
+}
+.link-card:focus {
+    opacity: 1;
+    box-shadow: none;
+    transform: scale(1.02);
+    margin: 9px 10px; /* Prevents the border from pushing the cards down */
+    border: var(--theme-border-highlight);
+}
+.link-card:hover {
+    transform: scale(1.02);
+    opacity: 1;
+    box-shadow: var(--light-card-box-shadow);
+}
+.link-card .left-block {
+    background-color: var(--primary-color-2);
+
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.link-card .right-block {
+    box-sizing: border-box;
+    width: 75%;
+    height: 100%;
+    min-height: 50px;
+    display: inline-block;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.link-card .right-block h2 {
+    letter-spacing: 2px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 10px!important;
+}
+.link-card .right-block p {
+    line-height: 1.2;
+    font-style: italic;
+    text-align: center;
+    color: var(--secondary-color-3);
+}
+.link-card .left-block h2 {
+    color: var(--primary-color-1);
+    width: 100%;
+    text-align: center;
+}
