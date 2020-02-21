@@ -35,6 +35,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    display: inline-block;
+}
 /* Scroll bar modifiers */
 /* width */
 ::-webkit-scrollbar {

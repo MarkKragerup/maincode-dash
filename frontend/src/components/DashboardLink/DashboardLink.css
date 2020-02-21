@@ -9,7 +9,7 @@
 
     cursor: pointer;
     opacity: 0.85;
-    transition: 0.2s all ease;
+    transition: 0.2s all ease,0s margin, 0s border;
 }
 .link-card:focus {
     opacity: 1;
@@ -38,8 +38,7 @@
     box-sizing: border-box;
     width: 75%;
     height: 100%;
-    min-height: 50px;
-    display: inline-block;
+    min-height: 115px;
 
     display: flex;
     flex-direction: column;
@@ -50,10 +49,9 @@
     letter-spacing: 2px;
     line-height: 27px;
     text-align: center;
-    margin-bottom: 10px!important;
+    margin-bottom: 5px!important;
 }
 .link-card .right-block p {
-    line-height: 1.2;
     font-style: italic;
     text-align: center;
     color: var(--secondary-color-3);

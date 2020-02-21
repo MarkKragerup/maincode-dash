@@ -16,55 +16,40 @@ export default function Frontpage(){
                 href={"https://monitor.maincode.dk"}
             >
                 <h2>Advanced Monitoring</h2>
-                <p>xx xxx xxx</p>
+                <p>Using Linux-Dash to gain detailed formance insight such as ressource usage of processes and docker containers.</p>
             </DashboardLink>
-            <a className="theme-card link-card" tabIndex={2}>
-                <div className="left-block">
-                    <h2 className="fas fa-external-link-alt" />
-                </div>
-                <div className="right-block">
-                    <h2>Advanced Monitoring</h2>
-                    <p>Some server info will be coming.</p>
-                    <p>test2</p>
-                    <p>test3</p>
-                </div>
-            </a>
 
-            <a className="theme-card link-card" tabIndex={3}>
-                <div className="left-block">
-                    <h2 className="fas fa-external-link-alt" />
-                </div>
-                <div className="right-block">
-                    <h2>Advanced Monitoring</h2>
-                    <p>Some server info will be coming.</p>
-                    <p>test2</p>
-                    <p>test3</p>
-                </div>
-            </a>
+            <DashboardLink
+                tabIndex={2}
+                href={"https://portrainer.maincode.dk"}
+            >
+                <h2>Docker Management</h2>
+                <p>Using Portrainer to manage docker containers and images, to start, stop and import images from docker-hub.</p>
+            </DashboardLink>
 
-            <a className="theme-card link-card" tabIndex={4}>
-                <div className="left-block">
-                    <h2 className="fas fa-external-link-alt" />
-                </div>
-                <div className="right-block">
-                    <h2>Advanced Monitoring</h2>
-                    <p>Some server info will be coming.</p>
-                    <p>test2</p>
-                    <p>test3</p>
-                </div>
-            </a>
+            <DashboardLink
+                tabIndex={3}
+                href={"https://cockpit.dash.maincode.dk"}
+            >
+                <h2>Logs and Jobs</h2>
+                <p>Cockpit dashboard for managing timed jobs (commands), and viewing advanced logs.</p>
+            </DashboardLink>
 
-            <a className="theme-card link-card" tabIndex={5}>
-                <div className="left-block">
-                    <h2 className="fas fa-external-link-alt" />
-                </div>
-                <div className="right-block">
-                    <h2>Advanced Monitoring</h2>
-                    <p>Some server info will be coming.</p>
-                    <p>test2</p>
-                    <p>test3</p>
-                </div>
-            </a>
+            <DashboardLink
+                tabIndex={4}
+                href={"https://phpmyadmin.maincode.dk/phpmyadmin/"}
+            >
+                <h2>MySQL Management</h2>
+                <p>Manage MySQL through phpMyAdmin - export backups, visit all instances.</p>
+            </DashboardLink>
+
+            <DashboardLink
+                tabIndex={5}
+                href={"https://monitor.maincode.dk"}
+            >
+                <h2>Custom Actions</h2>
+                <p>Run predefined scripts and actions.</p>
+            </DashboardLink>
         </div>
     );
 }
