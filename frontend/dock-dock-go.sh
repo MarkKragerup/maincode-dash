@@ -3,12 +3,22 @@ if [ "$1" == "prod" ]; then
     echo "Making production build!"
 
     # Kill any old instances
-    docker stop dash-frontend-dev-01
-    docker rm dash-frontend-dev-01
+    docker stop dash-frontend-prod-01
+    docker rm dash-frontend-prod-01
 
     # Build and run new instance
     docker build -t dash-frontend-prod -f Dockerfile.prod .
-    docker run -d --name dash-frontend-prod-01 -p 9000:80 -it --rm dash-frontend-prod
+    docker run -d --name dash-frontend-prod-01 -p 9100:80 -it --rm dash-frontend-prod
+elif [ "$1" == "stop" ]; then
+    echo "Stopping all dev / prod containers!"
+
+    # Kill any old instances
+    docker stop dash-frontend-prod-01
+    docker rm dash-frontend-prod-01
+
+    # Kill any old instances
+    docker stop dash-frontend-dev-01
+    docker rm dash-frontend-dev-01
 else
     echo "Launching frontend in devmode!"
 
