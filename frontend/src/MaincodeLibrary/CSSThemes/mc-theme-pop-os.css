@@ -115,3 +115,6 @@ a{
 .theme-card p{
     margin: 0;
 }
+.ant-tooltip-content{
+    font-family: var(--monospace-font);
+}
