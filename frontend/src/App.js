@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Frontpage from './pages/Frontpage/Frontpage';
 import './MaincodeLibrary/Maincode-Styles.css';
 import './MaincodeLibrary/CSSThemes/mc-theme-pop-os.css'
