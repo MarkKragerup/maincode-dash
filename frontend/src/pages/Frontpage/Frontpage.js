@@ -37,7 +37,7 @@ export default function Frontpage({changeUrlCallback}){
 
             <DashboardLink
                 tabIndex={4}
-                clickCallback={() => changeUrlCallback('https://phpmyadmin.maincode.dk/phpmyadmin/')}
+                clickCallback={() => changeUrlCallback('https://phpmyadmin.maincode.dk/phpmyadmin/index.php')}
             >
                 <h2>MySQL Management</h2>
                 <p>Manage MySQL through phpMyAdmin - export backups, visit all instances.</p>

@@ -1,6 +1,11 @@
-.menu-overlay-container{
+.menu-overlay {
+    z-index: 10;
     position: fixed;
-    z-index: 4;
-    bottom: 25px;
-    right: 25px;
+}
+.menu-foldout-space{
+    background-color: red;
+    position: fixed;
+    z-index: 9;
+    width: 150px;
+    height: 250px;
 }

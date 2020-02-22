@@ -8,6 +8,7 @@ import MenuOverlay from "./components/MenuOverlay/MenuOverlay";
 export default function App() {
     const [siteUrl, setSiteUrl] = useState(null);
 
+    console.log(siteUrl);
     return (
         <div className="App">
             <MenuOverlay changeSiteCallback={setSiteUrl}/>
