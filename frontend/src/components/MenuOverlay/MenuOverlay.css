@@ -1,0 +1,6 @@
+.menu-overlay-container{
+    position: fixed;
+    z-index: 4;
+    bottom: 25px;
+    right: 25px;
+}

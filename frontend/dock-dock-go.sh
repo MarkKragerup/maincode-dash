@@ -8,7 +8,7 @@ if [ "$1" == "prod" ]; then
 
     # Build and run new instance
     docker build -t dash-frontend-prod -f Dockerfile.prod .
-    docker run -d --name dash-frontend-prod-01 -p 9100:80 -it --rm dash-frontend-prod
+    docker run -d --name dash-frontend-prod-01 --restart unless-stopped -p 9100:80 -it --rm dash-frontend-prod
 elif [ "$1" == "stop" ]; then
     echo "Stopping all dev / prod containers!"
 

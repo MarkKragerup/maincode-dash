@@ -1,9 +1,13 @@
 import React from 'react';
 import './Nestedpage.css';
 
-export default function Nestedpage(){
+import Iframe from 'react-iframe';
 
+export default function Nestedpage({url}){
     return (
-        <p>hey</p>
+        <Iframe url={url}
+                id="nestedPage"
+                className="nestedPage"
+        />
     );
 }

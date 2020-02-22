@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Frontpage from './pages/Frontpage/Frontpage';
 import './MaincodeLibrary/Maincode-Styles.css';
 import './MaincodeLibrary/CSSThemes/mc-theme-pop-os.css'
+import Nestedpage from "./pages/Nestedpage/Nestedpage";
+import MenuOverlay from "./components/MenuOverlay/MenuOverlay";
 
 export default function App() {
+    const [siteUrl, setSiteUrl] = useState(null);
+
     return (
         <div className="App">
-            <Frontpage/>
+            <MenuOverlay changeSiteCallback={setSiteUrl}/>
+
+            { !!siteUrl ? <Nestedpage url={siteUrl}/> : <Frontpage changeUrlCallback={setSiteUrl}/> }
 
             <h2 style={{display: 'block'}}>Still needs:</h2>
             <ul>
